@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -326,7 +326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34.262, y: -43}
+  m_AnchoredPosition: {x: -50.07, y: -42}
   m_SizeDelta: {x: 238.79, y: 46.524}
   m_Pivot: {x: 0.29031694, y: 1.9431164}
 --- !u!114 &1116499408
@@ -382,9 +382,9 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 1164549735}
   - component: {fileID: 1164549734}
   m_Layer: 5
-  m_Name: Button
+  m_Name: btn_modo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -508,7 +508,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1164549735}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1935767572}
+        m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Wireframe3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1164549735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,9 +541,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e995da63ea1bc1a40a9d93d1e80e52c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd484b05bc16106469cdc0b3a4fbd8c0, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -581,7 +593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -109}
+  m_AnchoredPosition: {x: 0.0000014305, y: -113}
   m_SizeDelta: {x: 238.79, y: 46.524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1386352207
@@ -639,9 +651,9 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -764,7 +776,7 @@ GameObject:
   - component: {fileID: 1529450158}
   - component: {fileID: 1529450157}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: btn_modo3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -787,8 +799,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 192.99709, y: -157.99998}
-  m_SizeDelta: {x: 261.7377, y: 157.7228}
+  m_AnchoredPosition: {x: 230, y: -164.59}
+  m_SizeDelta: {x: 158.1077, y: 176.4335}
   m_Pivot: {x: 0.30641657, y: 0.5}
 --- !u!114 &1529450157
 MonoBehaviour:
@@ -833,7 +845,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1529450158}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1935767572}
+        m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Wireframe5
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1529450158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,9 +878,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9df97455a2db68c42891dc35737cc596, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 159dc51279a85564a9bc0dd2b91f6fef, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1043,7 +1067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.518, y: -55}
+  m_AnchoredPosition: {x: -12.518, y: -57}
   m_SizeDelta: {x: 238.79, y: 46.524}
   m_Pivot: {x: 0.4475791, y: 1.7474419}
 --- !u!114 &1934336163
@@ -1101,9 +1125,9 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1157,6 +1181,7 @@ GameObject:
   - component: {fileID: 1935767570}
   - component: {fileID: 1935767569}
   - component: {fileID: 1935767568}
+  - component: {fileID: 1935767572}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1248,6 +1273,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1935767572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935767567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75c163ab14cd3b4799b614b35f1b9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1935798258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1298,7 @@ GameObject:
   - component: {fileID: 1935798261}
   - component: {fileID: 1935798260}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: btn_modo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1284,8 +1321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.1425705, y: -157.99995}
-  m_SizeDelta: {x: 209.3604, y: 189.6212}
+  m_AnchoredPosition: {x: -0.000014305, y: -156.36}
+  m_SizeDelta: {x: 209.3604, y: 186.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935798260
 MonoBehaviour:
@@ -1330,7 +1367,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1935798261}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1935767572}
+        m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Wireframe4
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1935798261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,9 +1400,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 567c684e6a2a45e4f88cee026e36f744, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8637c3f9d298f4448b5f9428e872fa9b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
