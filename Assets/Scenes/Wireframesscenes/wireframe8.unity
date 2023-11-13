@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1Felicitaciones! Fue una buena puntuacion. \xBFSuerte para la proxima!"
+  m_text: "\xA1Felicitaciones! Fue una buena puntuacion."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 859676dbb34fdd749afb6cf504f14768, type: 2}
   m_sharedMaterial: {fileID: 7692144661464504352, guid: 859676dbb34fdd749afb6cf504f14768, type: 2}

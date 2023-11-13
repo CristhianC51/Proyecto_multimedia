@@ -455,6 +455,7 @@ GameObject:
   - component: {fileID: 1089293864}
   - component: {fileID: 1089293863}
   - component: {fileID: 1089293867}
+  - component: {fileID: 1089293868}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -558,6 +559,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75c163ab14cd3b4799b614b35f1b9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1089293868
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089293862}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf125f834f27eda44a46c709deb40ff1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1095534080
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,8 +856,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283395506
-  m_fontColor: {r: 0.69803923, g: 0.427451, b: 0.30980393, a: 1}
+    rgba: 4281282395
+  m_fontColor: {r: 0.35686275, g: 0.18431373, b: 0.18431373, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
