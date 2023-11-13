@@ -13,6 +13,10 @@ public class NewBehaviourScript : MonoBehaviour
     public TextMeshProUGUI puntosText; // Para mostrar los puntos
     public TextMeshProUGUI mensajeError; // Para mostrar el mensaje de error
 
+    public AudioSource musicSource;
+    public AudioClip nuevaMusica;
+    public string nombreNuevaEscena;
+
     // Define una estructura para representar la pregunta y su respuesta
     [System.Serializable]
     public struct PreguntaRespuesta
@@ -69,6 +73,7 @@ public class NewBehaviourScript : MonoBehaviour
         else
         {
             GuardarPuntos();
+            CambiarMusicaYEscena();
             SceneManager.LoadScene("Wireframe8");
         }
     }
@@ -92,5 +97,19 @@ public class NewBehaviourScript : MonoBehaviour
     void OcultarMensajeError()
     {
         mensajeError.gameObject.SetActive(false);
+    }
+
+    public void CambiarMusicaYEscena()
+    {
+        if (musicSource != null && nuevaMusica != null)
+        {
+            musicSource.clip = nuevaMusica;
+            musicSource.Play();
+        }
+
+        if (!string.IsNullOrEmpty(nombreNuevaEscena))
+        {
+            SceneManager.LoadScene(nombreNuevaEscena);
+        }
     }
 }

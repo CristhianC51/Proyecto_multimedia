@@ -13,6 +13,10 @@ public class PreguntasModo1 : MonoBehaviour
     public TextMeshProUGUI errorText;
     public TextMeshProUGUI pointsText; // TextMeshProUGUI para mostrar los puntos
 
+    public AudioSource musicSource;
+    public AudioClip nuevaMusica;
+    public string nombreNuevaEscena;
+
     int currentQuestionIndex = 0;
     float points = 0; // Variable para rastrear los puntos
 
@@ -67,12 +71,27 @@ public class PreguntasModo1 : MonoBehaviour
         Debug.Log("¡Quiz finalizado!");
         Debug.Log("Puntos: " + points);
         PlayerPrefs.SetFloat("Puntos", points);// Muestra los puntos en la consola
+        CambiarMusicaYEscena();
         SceneManager.LoadScene("Wireframe8");
     }
 
     void UpdatePointsDisplay()
     {
         pointsText.text = "Puntos: " + points.ToString(); // Actualiza el display de puntos
+    }
+
+    public void CambiarMusicaYEscena()
+    {
+        if (musicSource != null && nuevaMusica != null)
+        {
+            musicSource.clip = nuevaMusica;
+            musicSource.Play();
+        }
+
+        if (!string.IsNullOrEmpty(nombreNuevaEscena))
+        {
+            SceneManager.LoadScene(nombreNuevaEscena);
+        }
     }
 }
 
